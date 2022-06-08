@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .strecth{
+            align-items: stretch;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .colum{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>align-items(center)</h1>
+    <section class="container center">
+        <div class="item">Lorem ipsum dolor sit am sadfafe</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+    </section>
+
+    <h1>align-items(strecth)</h1>
+    <section class="container strecth">
+        <div class="item">Lorem ipsum dolor sit ame ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+    </section>
+
+    <h1>align-items(flex-start)</h1>
+    <section class="container flex-start">
+        <div class="item">Lorem ipsum dolor sit ame ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+    </section>
+
+    <h1>align-items(flex-end)</h1>
+    <section class="container flex-end">
+        <div class="item">Lorem ipsum dolor sit ame ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+    </section>
+
+    <h1>align-items(Baseline)</h1>
+    <section class="container Baseline">
+        <div class="item">Lorem ipsum dolor sit ame ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+    </section>
+
+
+    <h1>Colunas</h1>
+    <h1>align-items(center)</h1>
+    <section class="container center colum">
+        <div class="item">Lorem ipsum dolor sit am sadfafe</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+    </section>
+
+    <h1>align-items(strecth)</h1>
+    <section class="container strecth colum">
+        <div class="item">Lorem ipsum dolor sit ame ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+    </section>
+
+    <h1>align-items(flex-start)</h1>
+    <section class="container flex-start colum">
+        <div class="item">Lorem ipsum dolor sit ame ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+    </section>
+   
+    <h1>align-items(flex-end)</h1>
+    <section class="container flex-end colum">
+        <div class="item">Lorem ipsum dolor sit ame ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+    </section>
+
+    <h1>align-items(Baseline)</h1>
+    <section class="container Baseline colum">
+        <div class="item">Lorem ipsum dolor sit ame ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+        <div class="item">Lorem ipsum dolor sit ame</div>
+    </section>
+</body>
+</html>
