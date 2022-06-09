@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-self</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 350px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            /* align-items: center; */
+        }
+        .align-container{
+            align-items: center;
+        }
+        .item{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 4px;
+        }
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .auto{
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Align-self(AUTO)</h1>
+    <div class="container align-container">
+        <div class="item auto ">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit amet consectetur </div>
+        <div class="item auto">item 4</div>
+    </div>
+
+    <h1>Align-self(stretch)</h1>
+    <div class="container">
+        <div class="item stretch">AAA</div>
+        <div class="item stretch">123</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet consectetur </div>
+        <div class="item stretch">item 4</div>
+    </div>
+</body>
+</html>
